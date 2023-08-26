@@ -3,6 +3,7 @@ package helper
 import (
 	"encoding/json"
 	"errors"
+	"log"
 	"net/http"
 )
 
@@ -28,7 +29,9 @@ func WriteToResponseBody(w http.ResponseWriter, i interface{}) error {
 func ReadFromResponseBody(r *http.Response, i interface{}) error {
 	decoder := json.NewDecoder(r.Body)
 	if err := decoder.Decode(i); err != nil {
-		panic(err)
+		err := errors.New("can't decode form response body. " + err.Error())
+		log.Println(err.Error())
+		return err
 	}
 
 	return nil

@@ -17,7 +17,7 @@ func CheckBalance(reqBody web.AccountRequest) web.WebResponse {
 		return web.WebResponse{}
 	}
 
-	req, err := http.NewRequest("GET", "http://localhost:3003/api/cek-saldo", bytes.NewBuffer(reqBodyJSON))
+	req, err := http.NewRequest("POST", "http://localhost:3003/api/saldo", bytes.NewBuffer(reqBodyJSON))
 	if err != nil {
 		log.Println("Error creating request:", err)
 		return web.WebResponse{}
