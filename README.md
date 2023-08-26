@@ -13,7 +13,7 @@ docker run --name my-postgres -e POSTGRES_USER=adminpostgres -e POSTGRES_PASSWOR
 ```
 
 ### Run Kafka in Docker
-- Run `misc/docker-compose.yml`
+- Run `misc/zookeeper-kafka-compose.yml`
 ```
 docker-compose -f docker-compose.yml up
 ```
