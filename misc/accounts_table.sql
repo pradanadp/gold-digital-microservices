@@ -1,0 +1,6 @@
+CREATE TABLE accounts (
+    account_number VARCHAR(255) PRIMARY KEY,
+    balance        NUMERIC(12, 2) NOT NULL,
+    created_at     TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at     TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
