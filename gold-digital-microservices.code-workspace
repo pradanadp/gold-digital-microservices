@@ -1,0 +1,31 @@
+{
+    "folders": [
+        {
+            "path": "microservice/input-harga-service"
+        },
+        {
+            "path": "microservice/input-harga-storage"
+        },
+        {
+            "path": "microservice/cek-harga-service"
+        },
+        {
+            "path": "microservice/topup-service"
+        },
+        {
+            "path": "microservice/cek-saldo-service"
+        },
+        {
+            "path": "microservice/topup-storage"
+        },
+        {
+            "path": "microservice/buyback-service"
+        },
+        {
+            "path": "microservice/buyback-storage"
+        },
+        {
+            "path": "microservice/cek-mutasi-service"
+        }
+    ]
+}
