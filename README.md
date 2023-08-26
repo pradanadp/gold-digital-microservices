@@ -25,7 +25,7 @@ and then
 ```
 cd kafka_2.13-2.8.1/bin
 ```
-- Create Kafka topics for the project inside the `/bin/` folder
+- Create Kafka topics for the project inside the `/bin/` folder, `input-harga`, `topup`, and `buyback`
 ```
-kafka-topics.sh --create --topic input-harga --topic topup --topic buyback --bootstrap-server localhost:9092
+kafka-topics.sh --create --topic <topic-name> --bootstrap-server localhost:9092
 ```
